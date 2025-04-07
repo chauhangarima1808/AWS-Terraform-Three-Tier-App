@@ -1,18 +1,20 @@
 # AWS-Terraform-Three-Tier-App
 
-A comprehensive project deploying a sample web application using Terraform EKS modules and add-ons. My focus was on establishing robust networking, efficient cluster provisioning, essential add-ons, and comprehensive monitoring to ensure a seamless deployment experience. The solution includes a multi-AZ VPC with private and public subnets, Amazon EKS running across private subnets, ELB for traffic routing, auto-scaling for dynamic capacity management, and CloudWatch Observability for real-time monitoring.
+This project focuses on designing and deploying a highly scalable, highly available, and secure three-tier web application architecture on Amazon Web Services (AWS) using Terraform as the Infrastructure as Code (IaC) tool.
+
+The three-tier architecture—comprising presentation (web), application (logic), and data (database) layers—is a widely adopted model for building robust, modular, and scalable applications. Leveraging AWS cloud-native services and Terraform automation, this project showcases how to build and manage modern cloud infrastructure that is production-ready.
 
 ## Project Highlights
-- A multi-AZ VPC with private and public subnetsfor secure and scalable networking.
-- Amazon EKS control plane and worker nodes running across private subnets.
-- EKS Managed Node Groups with auto-scalingfor dynamic workload management.
-- Elastic Load Balancer (ELB) for routing external traffic.
-- CloudWatch Observability for real-time monitoring.
+- Infrastructure Provisioning with Terraform: Automated provisioning of all AWS resources including VPC, subnets, security groups, EC2 instances, RDS, and load balancers using modular and reusable Terraform code.
+- Scalability & High Availability: Designed with Auto Scaling Groups, Multi-AZ deployment, and Elastic Load Balancing to ensure seamless scaling and fault tolerance.
+- Security Best Practices: Network segmentation using public/private subnets, IAM roles and policies, security groups, and encrypted storage for data at rest.
+- Monitoring & Logging: Integration with AWS CloudWatch for real-time monitoring, logging, and alarms for operational visibility.
+- Modular Architecture: Clear separation of concerns using Terraform modules to promote reusability, scalability, and ease of maintenance.
 
 ## Architecture
 
 ### Target architecture
-![Architecture Diagram](/eks-architecture.png "Architecture Diagram")
+![Architecture Diagram](/architecture.jpg "Architecture Diagram")
 
 ### Target technology stack 
 - **Amazon EKS (Elastic Kubernetes Service):** EKS clusters are provisioned and auto-scaling node groups are used to efficiently handle workloads.
