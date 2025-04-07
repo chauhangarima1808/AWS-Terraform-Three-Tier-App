@@ -46,10 +46,10 @@ The three-tier architecture—comprising presentation (web), application (logic)
 - Ensured high availability by deploying EFS across multiple Availability Zones.
   
 ## Key Learnings
-✔ Design for Redundancy: Use Multi-AZ deployments and load balancers to avoid single points of failure.
-✔ Automate Scaling: Leverage auto-scaling to handle variable traffic loads.
-✔ Secure Resources: Implement security groups, IAM roles, and encryption for data protection.
-✔ Monitor Continuously: Use tools like CloudWatch to track application health and performance.
+- Design for Redundancy: Use Multi-AZ deployments and load balancers to avoid single points of failure.<br>
+- Automate Scaling: Leverage auto-scaling to handle variable traffic loads.<br>
+- Secure Resources: Implement security groups, IAM roles, and encryption for data protection.<br>
+- Monitor Continuously: Use tools like CloudWatch to track application health and performance.
 
 ## Conclusion
 This project successfully demonstrates the power of Infrastructure as Code with Terraform and the scalability of AWS in deploying a secure, resilient, and production-ready three-tier web application. By leveraging modular design, automation, and AWS best practices, the solution ensures high availability, seamless scalability, and operational efficiency—making it a solid foundation for modern cloud-native applications.
